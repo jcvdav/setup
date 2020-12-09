@@ -20,7 +20,6 @@ brew tap caskroom/cask
 
 # Finally, we can go ahead and run the brewfile with all other dependencies
 
-# brew bunlde dump      # will create a brewfile
 brew bundle             # installs everyting in the brewfile
 brew bundle check       # checks everything is installed and up to date
 
