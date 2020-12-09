@@ -1,0 +1,27 @@
+## Instructions to set up a new laptop ##
+
+# The first step is to get xcode and command line utilities.
+# We'll then be able to run the brewfile which as everything else.
+
+## Install XCode
+sudo xcodebuild -license accept
+
+## Install command line utils
+xcode-select --install
+
+## Make sure we are up to date
+sudo softwareupdate --install --all
+
+## Install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+## Instal Cask
+brew tap caskroom/cask
+
+# Finally, we can go ahead and run the brewfile with all other dependencies
+
+# brew bunlde dump      # will create a brewfile
+brew bundle             # installs everyting in the brewfile
+brew bundle check       # checks everything is installed and up to date
+
+## END OF SCRIPT ##
