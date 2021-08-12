@@ -2,4 +2,4 @@
 # Save status of homebrew and cask to Brewfile
 
 rm Brewfile
-brew bunlde dump      # will create a brewfile
+brew bundle dump      # will create a brewfile
